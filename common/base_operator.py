@@ -15,4 +15,4 @@ class BaseOperator(abc.ABC):
 
     def __rshift__(self, other):
         self.add_downstream_operator(other)
-        return self
+        return other
